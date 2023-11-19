@@ -10,6 +10,13 @@ module.exports = {
 	},
 	plugins: [require('daisyui')],
 	daisyui: {
-		themes: ['dark']
+		themes: [
+			{
+				dark: {
+					...require('daisyui/src/theming/themes')['dark'],
+					primary: '#5865F2'
+				}
+			}
+		]
 	}
 };
